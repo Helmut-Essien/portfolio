@@ -18,8 +18,19 @@ a {
     font-weight: 400;
 }
 
-span {
+.accent {
     color: #71e215;
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn-action:focus-visible,
+.nav-link:focus-visible,
+.view-project:focus-visible,
+.contact-link:focus-visible,
+.back-to-top:focus-visible {
+    outline: 2px solid #71e215;
+    outline-offset: 3px;
 }
 
 .navbar {
@@ -31,6 +42,14 @@ span {
     margin: 0;
     padding: 0;
     line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand-text {
+    font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -59,8 +78,7 @@ span {
 }
 
 .close-button-wrapper {
-    /* Style for the span if needed, e.g., positioning */
-    display: inline-block; /* or block, flex, etc., depending on layout needs */
+    display: inline-block;
 }
 
 .btn-close {
@@ -154,6 +172,14 @@ span {
     margin-top: 5px;
     border-radius: 30px;
     transition: 0.4s;
+    display: inline-block;
+}
+
+@media (min-width: 1200px) {
+    .let-talk-btn {
+        margin-left: 1.5rem;
+        margin-top: 0;
+    }
 }
 
     .btn-action:hover {
@@ -167,7 +193,8 @@ span {
         padding: 10px;
     }
 
-    .navbar-brand h2 {
+    .navbar-brand,
+    .brand-text {
         font-size: 20px;
     }
 
@@ -210,46 +237,17 @@ span {
         font-size: 55px;
     }
 
-    .content h3 {
+    .hero-tagline {
         color: white;
         font-size: 25px;
         margin-bottom: 50px;
     }
 
-    .content h4 {
+    .hero-greeting {
         color: #FAF5E9;
         letter-spacing: 2px;
         font-size: 20px;
-    }
-
-.newsletter form {
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-
-    .newsletter form input:first-child {
-        display: inline-block;
-        width: 100%;
-        padding: 14px 130px 14px 15px;
-        border: 2px solid #FFCC00;
-        outline: none;
-        border-radius: 30px;
-    }
-
-    .newsletter form input:last-child {
-        position: absolute;
-        display: inline-block;
-        outline: none;
-        border: none;
-        padding: 10px 30px;
-        border-radius: 30px;
-        background-color: #71e215;
-        color: white;
-        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-        top: 6px;
-        right: 6px;
-        cursor: pointer;
+        margin-bottom: 0;
     }
 
 @media (max-width: 768px) {
@@ -284,12 +282,13 @@ span {
         margin-bottom: 20px;
     }
 
-    .about-text h5 {
+    .about-subtitle {
         color: white;
         letter-spacing: 2px;
         font-size: 28px;
         margin-bottom: 25px;
         text-transform: capitalize;
+        font-weight: 600;
     }
 
     .about-text p {
@@ -333,7 +332,6 @@ span {
 }
 
     .service-title span {
-        color: #71e215;
         -webkit-text-stroke: 1px #71e215;
     }
 
@@ -556,6 +554,12 @@ span {
     font-size: 0.8rem;
 }
 
+.projects-note {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .project-main-title {
@@ -600,9 +604,35 @@ span {
 }
 
     .contact-main-title span {
-        color: #71e215;
         font-weight: bold;
     }
+
+.contact-intro {
+    text-align: center;
+    color: #FAF5E9;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-email {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+    .contact-email a {
+        color: #71e215;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+
+        .contact-email a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
 
 .contact-icons {
     list-style-type: none;
@@ -695,10 +725,30 @@ span {
         }
 }
 
+.site-footer {
+    background-color: #000;
+    border-top: 1px solid #1a1a1a;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
 
+    .site-footer p {
+        margin: 0 0 0.75rem;
+        font-size: 0.9rem;
+    }
 
+.back-to-top {
+    color: #71e215;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
 
-
+    .back-to-top:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
 
 
 
