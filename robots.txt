@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://helmut-essien.github.io/portfolio/sitemap.xml

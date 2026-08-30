@@ -3,16 +3,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Helmut Portfolio</title>
+    <title>Helmut Felix Essien | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Helmut Felix Essien, a web developer specializing in ASP.NET Core, full-stack development, and responsive UI design. View projects and get in touch.">
+    <meta name="author" content="Helmut Felix Essien">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://helmut-essien.github.io/portfolio/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://helmut-essien.github.io/portfolio/">
+    <meta property="og:title" content="Helmut Felix Essien | Web Developer Portfolio">
+    <meta property="og:description" content="Portfolio of Helmut Felix Essien, a web developer specializing in ASP.NET Core, full-stack development, and responsive UI design.">
+    <meta property="og:image" content="https://helmut-essien.github.io/portfolio/M12.jpg">
+    <meta property="og:image:alt" content="Portrait of Helmut Felix Essien">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Helmut Felix Essien Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Helmut Felix Essien | Web Developer Portfolio">
+    <meta name="twitter:description" content="Portfolio of Helmut Felix Essien, a web developer specializing in ASP.NET Core, full-stack development, and responsive UI design.">
+    <meta name="twitter:image" content="https://helmut-essien.github.io/portfolio/M12.jpg">
+    <meta name="twitter:image:alt" content="Portrait of Helmut Felix Essien">
+
+    <link rel="icon" href="Logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="Logo.png">
+
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="style.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Helmut Felix Essien",
+        "jobTitle": "Web Developer",
+        "url": "https://helmut-essien.github.io/portfolio/",
+        "email": "helmutessien@gmail.com",
+        "image": "https://helmut-essien.github.io/portfolio/M12.jpg",
+        "description": "Web developer specializing in ASP.NET Core, full-stack development, and responsive UI design.",
+        "knowsAbout": ["ASP.NET Core", "Web Development", "UI/UX Design", "Responsive Design"],
+        "sameAs": [
+            "https://www.linkedin.com/in/helmut-essien-161946244",
+            "https://www.instagram.com/calypsotumbler"
+        ]
+    }
+    </script>
 </head>
 <body class="bg-dark">
+    <a href="#home" class="visually-hidden-focusable">Skip to main content</a>
     <header id="header" class="fixed-top">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container">
-                <a href="#" class="navbar-brand ps-3"><h2>PORTFO<span>LIO</span></h2></a>
+                <a href="#home" class="navbar-brand ps-3" aria-label="Helmut Essien Portfolio home"><h2>PORTFO<span>LIO</span></h2></a>
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="offcanvas"
                         data-bs-target="#navbarOffcanvas"
@@ -65,7 +111,7 @@
         <section class="about-section container-fluid bg-dark">
             <div class="row">
                 <div class="col-sm">
-                    <img class="img-fluid" src="M12.jpg" srcset="M12-small.jpg 300w, M12-medium.jpg 600w, M12.jpg 1200w" sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, 1200px" alt="Helmut Essien's portrait">
+                    <img class="img-fluid" src="M12.jpg" width="960" height="1280" loading="lazy" alt="Portrait of Helmut Felix Essien, web developer">
                 </div>
                 <div class="col-sm">
                     <div class="about-text">
@@ -117,9 +163,9 @@
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="Logo.png" alt="Project 1 Thumbnail" class="img-fluid">
+                                <img src="Logo.png" alt="Accra Road Youth project thumbnail" class="img-fluid" loading="lazy">
                                 <div class="overlay">
-                                    <a href="https://accraroadyouth.somee.com/" target="_blank" rel="noopener" class="view-project">View Project</a>
+                                    <a href="https://accraroadyouth.somee.com/" target="_blank" rel="noopener noreferrer" class="view-project">View Project</a>
                                 </div>
                             </div>
                             <div class="project-details">
@@ -137,7 +183,7 @@
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="image.jpg" alt="Project 2 Thumbnail" class="img-fluid">
+                                <img src="image.jpg" alt="Project 2 thumbnail" class="img-fluid" loading="lazy">
                                 <div class="overlay">
                                     <a href="#" class="view-project">View Project</a>
                                 </div>
@@ -157,7 +203,7 @@
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="project-card">
                             <div class="project-image">
-                                <img src="image.jpg" alt="Project 3 Thumbnail" class="img-fluid">
+                                <img src="image.jpg" alt="Project 3 thumbnail" class="img-fluid" loading="lazy">
                                 <div class="overlay">
                                     <a href="#" class="view-project">View Project</a>
                                 </div>
@@ -185,25 +231,25 @@
             <div class="col-md-6">
                 <ul class="contact-icons list-unstyled d-flex justify-content-center flex-wrap">
                     <li class="mb-3 mx-2">
-                        <a href="mailto:helmutessien@gmail.com" target="_blank" class="contact-link">
+                        <a href="mailto:helmutessien@gmail.com" class="contact-link" aria-label="Email Helmut Essien">
                             <i class="fas fa-envelope"></i>
                             <span class="sr-only">Email</span>
                         </a>
                     </li>
                     <li class="mb-3 mx-2">
-                        <a href="https://wa.me/+233276063747" target="_blank" class="contact-link">
+                        <a href="https://wa.me/+233276063747" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="WhatsApp Helmut Essien">
                             <i class="fab fa-whatsapp"></i>
                             <span class="sr-only">WhatsApp</span>
                         </a>
                     </li>
                     <li class="mb-3 mx-2">
-                        <a href="https://www.linkedin.com/in/helmut-essien-161946244" target="_blank" class="contact-link">
+                        <a href="https://www.linkedin.com/in/helmut-essien-161946244" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile of Helmut Essien">
                             <i class="fab fa-linkedin-in"></i>
                             <span class="sr-only">LinkedIn</span>
                         </a>
                     </li>
                     <li class="mb-3 mx-2">
-                        <a href="https://www.instagram.com/calypsotumbler" target="_blank" class="contact-link">
+                        <a href="https://www.instagram.com/calypsotumbler" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Instagram profile of Helmut Essien">
                             <i class="fab fa-instagram"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
